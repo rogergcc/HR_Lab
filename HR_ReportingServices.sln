@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "HR_ReportingServices", "HR_ReportingServices\HR_ReportingServices.rptproj", "{C76BDCE3-2B53-4070-BCBA-E88E1CC82943}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Report Project1", "Report Project1\Report Project1.rptproj", "{B23C1615-1B17-41FC-9894-F980F6856463}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{53A38A7D-D738-4FA3-8180-2650390B215B}"
+	ProjectSection(SolutionItems) = preProject
+		hr.sql = hr.sql
+		hr_consultas.sql = hr_consultas.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C76BDCE3-2B53-4070-BCBA-E88E1CC82943}.Debug|Default.ActiveCfg = Debug
+		{C76BDCE3-2B53-4070-BCBA-E88E1CC82943}.Debug|Default.Build.0 = Debug
+		{C76BDCE3-2B53-4070-BCBA-E88E1CC82943}.Debug|Default.Deploy.0 = Debug
+		{C76BDCE3-2B53-4070-BCBA-E88E1CC82943}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{C76BDCE3-2B53-4070-BCBA-E88E1CC82943}.DebugLocal|Default.Build.0 = DebugLocal
+		{C76BDCE3-2B53-4070-BCBA-E88E1CC82943}.Release|Default.ActiveCfg = Release
+		{C76BDCE3-2B53-4070-BCBA-E88E1CC82943}.Release|Default.Build.0 = Release
+		{C76BDCE3-2B53-4070-BCBA-E88E1CC82943}.Release|Default.Deploy.0 = Release
+		{B23C1615-1B17-41FC-9894-F980F6856463}.Debug|Default.ActiveCfg = Debug
+		{B23C1615-1B17-41FC-9894-F980F6856463}.Debug|Default.Build.0 = Debug
+		{B23C1615-1B17-41FC-9894-F980F6856463}.Debug|Default.Deploy.0 = Debug
+		{B23C1615-1B17-41FC-9894-F980F6856463}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{B23C1615-1B17-41FC-9894-F980F6856463}.DebugLocal|Default.Build.0 = DebugLocal
+		{B23C1615-1B17-41FC-9894-F980F6856463}.Release|Default.ActiveCfg = Release
+		{B23C1615-1B17-41FC-9894-F980F6856463}.Release|Default.Build.0 = Release
+		{B23C1615-1B17-41FC-9894-F980F6856463}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
