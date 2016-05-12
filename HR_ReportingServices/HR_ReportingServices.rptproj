@@ -15,6 +15,10 @@
   </DataSets>
   <Reports>
     <ProjectItem>
+      <Name>Report 4.4-1.rdl</Name>
+      <FullPath>Report 4.4-1.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Report1.rdl</Name>
       <FullPath>Report1.rdl</FullPath>
     </ProjectItem>
@@ -23,8 +27,20 @@
       <FullPath>Report2.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Report 4.4-1.rdl</Name>
-      <FullPath>Report 4.4-1.rdl</FullPath>
+      <Name>Report4.4.-12.rdl</Name>
+      <FullPath>Report4.4.-12.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report4.4-10.rdl</Name>
+      <FullPath>Report4.4-10.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report4.4-11.rdl</Name>
+      <FullPath>Report4.4-11.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report4.4-13.rdl</Name>
+      <FullPath>Report4.4-13.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Report4.4-4.rdl</Name>
@@ -39,24 +55,40 @@
       <FullPath>Report4.4-8.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Report4.4-10.rdl</Name>
-      <FullPath>Report4.4-10.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Report4.4-9.rdl</Name>
       <FullPath>Report4.4-9.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Report4.4-11.rdl</Name>
-      <FullPath>Report4.4-11.rdl</FullPath>
+      <Name>Report4.5-2.rdl</Name>
+      <FullPath>Report4.5-2.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Report4.4.-12.rdl</Name>
-      <FullPath>Report4.4.-12.rdl</FullPath>
+      <Name>Report4.5-3.rdl</Name>
+      <FullPath>Report4.5-3.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Report4.4-13.rdl</Name>
-      <FullPath>Report4.4-13.rdl</FullPath>
+      <Name>Report4.5-4.rdl</Name>
+      <FullPath>Report4.5-4.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report4.5-5.rdl</Name>
+      <FullPath>Report4.5-5.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report4.5-6.rdl</Name>
+      <FullPath>Report4.5-6.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report4.4-2.rdl</Name>
+      <FullPath>Report4.4-2.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report4.4-3.rdl</Name>
+      <FullPath>Report4.4-3.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report4.5-7.rdl</Name>
+      <FullPath>Report4.5-7.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
