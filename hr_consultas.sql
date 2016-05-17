@@ -28,8 +28,7 @@ FROM      employees;
 --4.2. Actividad N° 02 – Reconociendo la estructura
 --4.2-1
 exec sp_columns departments
-SELECT *
-FROM   departments; 
+SELECT *FROM departments; 
 
 --4.2-2
 SELECT employee_id, last_name, job_id, hire_date StartDate
