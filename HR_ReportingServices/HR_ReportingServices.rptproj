@@ -114,6 +114,14 @@
       <Name>Report4.3-3.rdl</Name>
       <FullPath>Report4.3-3.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Report4.4-7.rdl</Name>
+      <FullPath>Report4.4-7.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report4.4-14.rdl</Name>
+      <FullPath>Report4.4-14.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>

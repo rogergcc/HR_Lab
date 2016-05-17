@@ -94,7 +94,7 @@ AND      department_id IN (20, 50);
 SELECT   last_name, hire_date
 FROM     employees
 WHERE    hire_date LIKE '%94%';
-select *from employees
+
 --4.4-8
 SELECT   last_name, job_id
 FROM     employees 
