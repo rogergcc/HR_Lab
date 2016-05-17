@@ -27,6 +27,18 @@
       <FullPath>Report2.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Report4.2-1.rdl</Name>
+      <FullPath>Report4.2-1.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report4.2-3.rdl</Name>
+      <FullPath>Report4.2-3.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report4.3-1.rdl</Name>
+      <FullPath>Report4.3-1.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Report4.4.-12.rdl</Name>
       <FullPath>Report4.4.-12.rdl</FullPath>
     </ProjectItem>
@@ -53,6 +65,10 @@
     <ProjectItem>
       <Name>Report4.4-4.rdl</Name>
       <FullPath>Report4.4-4.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report4.4-5.rdl</Name>
+      <FullPath>Report4.4-5.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Report4.4-6.rdl</Name>
@@ -91,24 +107,12 @@
       <FullPath>Report4.5-7.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Report4.2-1.rdl</Name>
-      <FullPath>Report4.2-1.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Report4.2-3.rdl</Name>
-      <FullPath>Report4.2-3.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Report4.3-1.rdl</Name>
-      <FullPath>Report4.3-1.rdl</FullPath>
+      <Name>Report4.3-2.rdl</Name>
+      <FullPath>Report4.3-2.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Report4.3-3.rdl</Name>
       <FullPath>Report4.3-3.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Report4.4-5.rdl</Name>
-      <FullPath>Report4.4-5.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

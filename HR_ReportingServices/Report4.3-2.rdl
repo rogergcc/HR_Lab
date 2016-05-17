@@ -6,22 +6,19 @@
     <DataSource Name="HR_DS">
       <DataSourceReference>HR_DS</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
-      <rd:DataSourceID>1632b7df-71ba-49e2-b782-cf52d0d18bb6</rd:DataSourceID>
+      <rd:DataSourceID>1f4902b1-56b4-463b-8a3e-00816a3fe032</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>HR_DS</DataSourceName>
-        <CommandText>SELECT CONCAT(employee_id, ',', first_name, ',', last_name
-				, ',', email, ',', phone_number, ',', job_id
-				, ',', manager_id, ',', hire_date, ',', salary
-				, ',', commission_pct, ',', department_id) AS LosEmpleados FROM employees</CommandText>
+        <CommandText>SELECT CONCAT(last_name, ',', job_id) AS 'Empleado y Puesto' FROM employees</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
-        <Field Name="LosEmpleados">
-          <DataField>LosEmpleados</DataField>
+        <Field Name="Empleado_y_Puesto">
+          <DataField>Empleado y Puesto</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
@@ -38,7 +35,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Report4.3-3</Value>
+                    <Value>Report4.3-2</Value>
                     <Style>
                       <FontFamily>Segoe UI Light</FontFamily>
                       <FontSize>24pt</FontSize>
@@ -51,7 +48,7 @@
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Height>0.42in</Height>
-            <Width>5.73333in</Width>
+            <Width>5in</Width>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -63,7 +60,7 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>5.73333in</Width>
+                  <Width>2.04167in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -79,7 +76,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Los Empleados</Value>
+                                  <Value>Empleado y Puesto</Value>
                                   <Style>
                                     <FontFamily />
                                     <FontSize>11pt</FontSize>
@@ -115,14 +112,14 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="LosEmpleados">
+                        <Textbox Name="Empleado_y_Puesto">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!LosEmpleados.Value</Value>
+                                  <Value>=Fields!Empleado_y_Puesto.Value</Value>
                                   <Style>
                                     <FontFamily />
                                     <Color>#333333</Color>
@@ -132,7 +129,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>LosEmpleados</rd:DefaultName>
+                          <rd:DefaultName>Empleado_y_Puesto</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -181,7 +178,7 @@
             <DataSetName>DataSet1</DataSetName>
             <Top>0.42in</Top>
             <Height>0.43in</Height>
-            <Width>5.73333in</Width>
+            <Width>2.04167in</Width>
             <ZIndex>1</ZIndex>
             <Style />
           </Tablix>
@@ -189,7 +186,7 @@
         <Height>0.85in</Height>
         <Style />
       </Body>
-      <Width>5.73333in</Width>
+      <Width>5in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
@@ -208,5 +205,5 @@
   <Language>es-ES</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>0032b7b7-6022-4cdc-82c8-951ac1d73e27</rd:ReportID>
+  <rd:ReportID>ba83bd97-7bd4-4c08-b682-751226034711</rd:ReportID>
 </Report>

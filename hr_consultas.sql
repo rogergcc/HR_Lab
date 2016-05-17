@@ -46,21 +46,15 @@ SELECT employee_id "Emp N°", last_name "Empleado",
 FROM   employees;
 
 --4.3-2
-DECLARE @listStr VARCHAR(MAX)
-SELECT @listStr = COALESCE(last_name+',' ,'') + job_id
-FROM   employees;
-SELECT @listStr, job_id "Empleado y titulo" from employees
+
+SELECT CONCAT(last_name, ',', job_id) AS 'Empleado y Puesto' FROM employees
 
 
-/*SELECT employee_id || ',' || first_name || ',' || last_name  
-       || ',' || email || ',' || phone_number || ','|| job_id
-       || ',' || manager_id || ',' || hire_date || ',' 
-       || salary || ',' || commission_pct || ',' || department_id 
-       THE_OUTPUT 
-FROM   employees;*/
-
-
---COALESCE(employee_id+',' ,'') + first_name
+--4.3-3
+SELECT CONCAT(employee_id, ',', first_name, ',', last_name
+				, ',', email, ',', phone_number, ',', job_id
+				, ',', manager_id, ',', hire_date, ',', salary
+				, ',', commission_pct, ',', department_id) AS LosEmpleados FROM employees
 
 SELECT employee_id, first_name, last_name, email,
 COALESCE(employee_id, first_name, last_name, email) AS FirstNotNull
