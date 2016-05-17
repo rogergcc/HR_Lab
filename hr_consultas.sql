@@ -1,5 +1,8 @@
 ﻿
+--4.1. Actividad N° 01 – Revisión de Sintaxis
 
+--De los siguientes comandos ¿Cuál es el resultado? ¿En caso de 
+--ser error cual sería la sentencia correcta?
 SELECT last_name, job_id, salary AS Sal 
 FROM   employees; 
 
@@ -21,22 +24,29 @@ FROM      employees;
 */
 
 --actividad 1
+
+--4.2. Actividad N° 02 – Reconociendo la estructura
+--4.2-1
 exec sp_columns departments
 SELECT *
 FROM   departments; 
 
-
+--4.2-2
 SELECT employee_id, last_name, job_id, hire_date StartDate
 FROM   employees; 
-
+--4.2-3
 SELECT DISTINCT job_id
 FROM   employees; 
---actividad 3
+-------------------------------------------
+-------------------------------------------
+--4.3. Actividad N° 03 – Consultas Básicas
+
+--4.3-1
 SELECT employee_id "Emp N°", last_name "Empleado",
        job_id "Puesto", hire_date "Fecha Contratacion" 
 FROM   employees;
 
-
+--4.3-2
 DECLARE @listStr VARCHAR(MAX)
 SELECT @listStr = COALESCE(last_name+',' ,'') + job_id
 FROM   employees;
@@ -57,48 +67,51 @@ SELECT employee_id, first_name, last_name, email,
 COALESCE(employee_id, first_name, last_name, email) AS FirstNotNull
 FROM employees;
 
+--4.4. Actividad N° 04 – Restricción y Ordenamiento
+
+--4.4-1
 SELECT  last_name, salary
 FROM    employees 
 WHERE   salary > 12000;  
-
+--4.4-2
 SELECT  last_name, department_id
 FROM    employees 
 WHERE   employee_id = 176;
-
+--4.4-3
 SELECT  last_name, salary
 FROM    employees 
 WHERE   salary NOT BETWEEN 5000 AND 12000;
-
+--4.4-4
 SELECT   last_name, job_id, hire_date
 FROM     employees
 WHERE    last_name IN ('Matos', 'Taylor')
 ORDER BY hire_date; 
-
+--4.4-5
 SELECT   last_name, department_id
 FROM     employees
 WHERE    department_id IN (20, 50)
 ORDER BY last_name ASC;
 
-
+--4.4-6
 SELECT   last_name "Employee", salary "Monthly Salary"
 FROM     employees
 WHERE    salary  BETWEEN 5000 AND 12000 
 AND      department_id IN (20, 50);
-
+--4.4-7
 SELECT   last_name, hire_date
 FROM     employees
-WHERE    hire_date LIKE '%94';
-
-
+WHERE    hire_date LIKE '%94%';
+select *from employees
+--4.4-8
 SELECT   last_name, job_id
 FROM     employees 
 WHERE    manager_id IS NULL;
-
+--4.4-9
 SELECT   last_name, salary, commission_pct
 FROM     employees
 WHERE    commission_pct IS NOT NULL
 ORDER BY salary DESC, commission_pct DESC;
---10
+--4.4-10
 
 /*Create Procedure consultarMayorA 
 ( @sal_amt int )
@@ -111,6 +124,7 @@ end*/
 
 execute consultarMayorA 12000
 go
+--4.4-11
 /*create procedure consultaAdmin
 (@mgr_num int,
  @order_col varchar(15)
@@ -129,44 +143,46 @@ ORDER BY
 		END ASC
 end*/
 exec consultaAdmin 103, 'last_name'
-
+--4.4-12
 SELECT   last_name
 FROM     employees 
 WHERE    last_name LIKE '__a%';
-
+--4.4-13
 SELECT   last_name
 FROM     employees
 WHERE    last_name LIKE '%a%'
 AND      last_name LIKE '%e%';
 
-
+--4.4-14
 SELECT   last_name, job_id, salary
 FROM     employees
 WHERE    job_id IN ('SA_REP', 'ST_CLERK') 
 AND      salary NOT IN (2500, 3500, 7000);
 
-
+--4.4-15
 SELECT   last_name "Employee", salary "Monthly Salary", 
          commission_pct
 FROM     employees
 WHERE    commission_pct = .20; 
+-------------------------------------
+--4.5. Actividad N° 05 – Funciones
 
---
-
+--4.5-1
 SELECT  GETDATE()
 
-
+--4.5-2
 SELECT  employee_id, last_name, salary,
         ROUND(salary * 1.155, 0) "New Salary"
 FROM    employees;
 
-
+--4.5-3
 SELECT  employee_id, last_name, salary, 
         ROUND(salary * 1.155, 0) "New Salary",
         ROUND(salary * 1.155, 0) - salary "Increase" 
 FROM    employees;
 
 --UPPER(LEFT(@string,1)) + LOWER(RIGHT(@string, LEN(@string) -1)),
+--4.5-4
 SELECT  UPPER(LEFT(last_name,1)) + LOWER(RIGHT(last_name, LEN(last_name) -1)) last_name,
         LEN(last_name) "Length"
 FROM    employees 
@@ -175,9 +191,10 @@ OR      last_name LIKE 'M%'
 OR      last_name LIKE 'A%'
 ORDER BY last_name ; 
 
-
+--4.5-5
 exec letraApellido 'j'
 
+--4.5-6
 SELECT 
     DATEDIFF(MONTH, hire_date, GETDATE()) +
     CASE 
@@ -189,12 +206,12 @@ SELECT
 	from employees
 ORDER BY months_worked; 
 
-SELECT rpad(last_name, 8)||' '|| 
+/*SELECT rpad(last_name, 8)||' '|| 
        rpad(' ', salary/1000+1, '*')
                EMPLOYEES_AND_THEIR_SALARIES
 FROM  employees
 ORDER BY salary DESC; 
-
+*/
 
 --11
 
@@ -322,23 +339,18 @@ AND    salary > (SELECT AVG(salary)
 
 --4.10.  Actividad N° 10 – Conjuntos
 use hr;
-SELECT department_id
+--4.10-1
+SELECT department_id,department_name
 FROM   departments
-MINUS
-SELECT department_id
-FROM   employees
+EXCEPT
+SELECT d.department_id,d.department_name
+FROM   employees e
+join departments d on e.department_id=d.department_id 
 WHERE  job_id = 'ST_CLERK';
 
 -------------------------
-SELECT c.country_id, c.country_name
-FROM   countries c
- JOIN countries on c.region_id
-MINUS 
-SELECT country_id, country_name
-FROM   countries  
 
-NATURAL JOIN departments;
-
+--4.10-2
 USE hr
 SELECT country_id, country_name
 FROM   countries 
@@ -349,7 +361,7 @@ FROM   countries c
  JOIN departments d on l.location_id=d.location_id
 
 
-
+ --4.10-3
 SELECT  job_id, department_id, 'x' orden
 FROM    employees
 WHERE department_id = 10
@@ -363,13 +375,14 @@ FROM    employees
 WHERE department_id = 20 
 ORDER BY  orden;
 
-
+--4.10-4
 SELECT    employee_id,job_id
 FROM      employees
 INTERSECT  
 SELECT   employee_id,job_id
 FROM     job_history;
 
+--4.10-5
 SELECT last_name,department_id,Convert(varchar ,null)
 FROM   employees
 UNION 
