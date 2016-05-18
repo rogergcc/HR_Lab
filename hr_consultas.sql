@@ -211,6 +211,14 @@ select last_name,
 right(replicate('$',15)+cast(CAST(salary as int) as varchar(15)),15) aS salario
 FROM   employees;
 
+--4.5-8
+SELECT CONCAT(left(last_name,8), 
+' ', 
+left(replicate('*',(CAST(salary as int)/1000)+1),(CAST(salary as int)/1000)+1)) 
+AS 'Empleados y sus Salarios' 
+FROM employees
+ORDER BY salary DESC;
+
 --11
 
 Select Convert(datetime ,commission_pct) 

@@ -130,6 +130,10 @@
       <Name>Report4.5-7.rdl</Name>
       <FullPath>Report4.5-7.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Report4.5-8.rdl</Name>
+      <FullPath>Report4.5-8.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
