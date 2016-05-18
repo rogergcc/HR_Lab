@@ -10,7 +10,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{53A38A7D-D738-4FA3-8180-2650390B215B}"
 	ProjectSection(SolutionItems) = preProject
 		hr.sql = hr.sql
-		hr_consultas.sql = hr_consultas.sql
+		hr_consultasLab01.sql = hr_consultasLab01.sql
+		lab02.sql = lab02.sql
 	EndProjectSection
 EndProject
 Global
