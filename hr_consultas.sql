@@ -161,7 +161,7 @@ WHERE    commission_pct = .20;
 --4.5. Actividad N° 05 – Funciones
 
 --4.5-1
-SELECT  GETDATE()
+SELECT  GETDATE() 'Fecha y hora Actual'
 
 --4.5-2
 SELECT  employee_id, last_name, salary,
@@ -205,6 +205,11 @@ ORDER BY months_worked;
 FROM  employees
 ORDER BY salary DESC; 
 */
+
+--4.5-7
+select last_name,
+right(replicate('$',15)+cast(CAST(salary as int) as varchar(15)),15) aS salario
+FROM   employees;
 
 --11
 

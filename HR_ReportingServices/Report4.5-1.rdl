@@ -6,26 +6,20 @@
     <DataSource Name="HR_DS">
       <DataSourceReference>HR_DS</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
-      <rd:DataSourceID>2b287dc1-30b6-4603-889c-43b223087d8a</rd:DataSourceID>
+      <rd:DataSourceID>8f8d9640-c88f-4d09-bad1-c18430ca621d</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>HR_DS</DataSourceName>
-        <CommandText>select last_name,
-right(replicate('$',15)+cast(CAST(salary as int) as varchar(15)),15) aS salario
-FROM   employees;</CommandText>
+        <CommandText>SELECT  GETDATE() 'Fecha y hora Actual'</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
-        <Field Name="last_name">
-          <DataField>last_name</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="salario">
-          <DataField>salario</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="Fecha_y_hora_Actual">
+          <DataField>Fecha y hora Actual</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -41,7 +35,7 @@ FROM   employees;</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Report4.5-7</Value>
+                    <Value>Report4.5-1</Value>
                     <Style>
                       <FontFamily>Segoe UI Light</FontFamily>
                       <FontSize>24pt</FontSize>
@@ -66,10 +60,7 @@ FROM   employees;</CommandText>
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1.94167in</Width>
+                  <Width>1.69167in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -85,7 +76,7 @@ FROM   employees;</CommandText>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>last name</Value>
+                                  <Value>Fecha y hora Actual</Value>
                                   <Style>
                                     <FontFamily />
                                     <FontSize>11pt</FontSize>
@@ -114,44 +105,6 @@ FROM   employees;</CommandText>
                         </Textbox>
                       </CellContents>
                     </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="textbox3">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>salario</Value>
-                                  <Style>
-                                    <FontFamily />
-                                    <FontSize>11pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                    <Color>#666666</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>textbox3</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                            </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
-                            <FontFamily />
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
@@ -159,14 +112,14 @@ FROM   employees;</CommandText>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="last_name">
+                        <Textbox Name="Fecha_y_hora_Actual">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!last_name.Value</Value>
+                                  <Value>=Fields!Fecha_y_hora_Actual.Value</Value>
                                   <Style>
                                     <FontFamily />
                                     <Color>#333333</Color>
@@ -176,43 +129,7 @@ FROM   employees;</CommandText>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>last_name</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                            </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
-                            <FontFamily />
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="salario">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!salario.Value</Value>
-                                  <Style>
-                                    <FontFamily />
-                                    <Color>#333333</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>salario</rd:DefaultName>
+                          <rd:DefaultName>Fecha_y_hora_Actual</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -235,7 +152,6 @@ FROM   employees;</CommandText>
             </TablixBody>
             <TablixColumnHierarchy>
               <TablixMembers>
-                <TablixMember />
                 <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
@@ -262,7 +178,7 @@ FROM   employees;</CommandText>
             <DataSetName>DataSet1</DataSetName>
             <Top>0.42in</Top>
             <Height>0.43in</Height>
-            <Width>2.94167in</Width>
+            <Width>1.69167in</Width>
             <ZIndex>1</ZIndex>
             <Style />
           </Tablix>
@@ -289,5 +205,5 @@ FROM   employees;</CommandText>
   <Language>es-ES</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>7de0e558-434b-489c-9cd0-8b4be31f6a60</rd:ReportID>
+  <rd:ReportID>5b7be78a-3a79-4916-83aa-fb904839f85b</rd:ReportID>
 </Report>

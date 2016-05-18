@@ -103,10 +103,6 @@
       <FullPath>Report4.5-6.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Report4.5-7.rdl</Name>
-      <FullPath>Report4.5-7.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Report4.3-2.rdl</Name>
       <FullPath>Report4.3-2.rdl</FullPath>
     </ProjectItem>
@@ -121,6 +117,18 @@
     <ProjectItem>
       <Name>Report4.4-14.rdl</Name>
       <FullPath>Report4.4-14.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report4.4-15.rdl</Name>
+      <FullPath>Report4.4-15.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report4.5-1.rdl</Name>
+      <FullPath>Report4.5-1.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report4.5-7.rdl</Name>
+      <FullPath>Report4.5-7.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
